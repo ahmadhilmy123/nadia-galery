@@ -6,7 +6,7 @@ import styles from './App.module.css';
 const images = [
   {
     id: 1,
-    url: "logo.svg",
+    url: "fotonadia1.jpg",
     title: "Foto Ke 1",
     description: "Indahnya matahari terbenam di pantai ini masih kalah dengan indahnya senyumanmu yang selalu menerangi hariku"
   },
