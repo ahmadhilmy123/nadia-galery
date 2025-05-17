@@ -26,7 +26,7 @@ const images = [
     id: 4,
     url: "fotonadia4.jpg", 
     title: "Foto Ke 4",
-    description: "Danau Toba memang luas dan dalam, tapi masih tak seluas dan sedalam rasa sayangku untukmu"
+    description: "Danau Toba memang luas dan dalam, tapi masih tak seluas dan sedalam rasa untukmu"
   },
   {
     id: 5,
