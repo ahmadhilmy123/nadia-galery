@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/nadia-galery/static/css/main.a6011a4a.css",
-    "main.js": "/nadia-galery/static/js/main.d9ce2957.js",
+    "main.js": "/nadia-galery/static/js/main.a1f0fe58.js",
     "index.html": "/nadia-galery/index.html",
     "main.a6011a4a.css.map": "/nadia-galery/static/css/main.a6011a4a.css.map",
-    "main.d9ce2957.js.map": "/nadia-galery/static/js/main.d9ce2957.js.map"
+    "main.a1f0fe58.js.map": "/nadia-galery/static/js/main.a1f0fe58.js.map"
   },
   "entrypoints": [
     "static/css/main.a6011a4a.css",
-    "static/js/main.d9ce2957.js"
+    "static/js/main.a1f0fe58.js"
   ]
 }
