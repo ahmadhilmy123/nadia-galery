@@ -1,0 +1,205 @@
+.musicPlayer {
+    background: linear-gradient(135deg, #434343, #000000);
+    border-radius: 12px;
+    color: white;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    max-height: 70px;
+    transition: max-height 0.4s ease;
+  }
+  
+  .expanded {
+    max-height: 250px;
+  }
+  
+  .playerToggle {
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .playerToggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .playerContent {
+    padding: 20px;
+  }
+  
+  .songInfo {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .songInfo h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .songInfo p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .controlButton {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+  }
+  
+  .controlButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .playButton {
+    width: 50px;
+    height: 50px;
+    background-color: #6e8efb;
+    font-size: 1.5rem;
+  }
+  
+  .playButton:hover {
+    background-color: #5a7bf0;
+  }
+  
+  .timeline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .timeDisplay {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.8);
+    min-width: 35px;
+  }
+  
+  .progressBar {
+    flex: 1;
+    height: 5px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .progressBar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #a777e3;
+    cursor: pointer;
+    transition: transform 0.1s;
+  }
+  
+  .progressBar::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+  }
+  
+  .volumeControl {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .volumeIcon {
+    font-size: 1.2rem;
+  }
+  
+  .volumeSlider {
+    flex: 1;
+    height: 5px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .volumeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #6e8efb;
+    cursor: pointer;
+  }
+  
+  /* Animasi tambahan */
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  .playButton:active {
+    animation: pulse 0.3s ease;
+  }
+  
+  /* Responsif */
+  @media (max-width: 768px) {
+    .featuredImage {
+      height: 350px;
+    }
+    
+    .thumbnailContainer {
+      justify-content: flex-start;
+    }
+    
+    .thumbnail {
+      flex: 0 0 100px;
+      height: 70px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .featuredImage {
+      height: 250px;
+    }
+    
+    .imageInfo h3 {
+      font-size: 1.3rem;
+    }
+    
+    .controls {
+      gap: 10px;
+    }
+    
+    .controlButton {
+      width: 35px;
+      height: 35px;
+    }
+    
+    .playButton {
+      width: 45px;
+      height: 45px;
+    }
+  }
